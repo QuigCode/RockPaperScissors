@@ -1,0 +1,170 @@
+:root {
+	--colourBG: #26006E;
+	--colourText: FloralWhite;
+	--colourPrim1: #FE2BF1;
+	--colourPrim2: #00DFBA;
+	--colourPrim3: #0C7CEB;
+}
+
+* {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	/*margin: 0px;
+	padding: 0px;*/
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+	background-color: var(--colourBG);
+	color: var(--colourText);
+	text-transform: uppercase;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: space-evenly;
+}
+
+.colour01 {
+	color: var(--colourPrim1);
+}
+
+.colour02 {
+	color: var(--colourPrim2);
+}
+
+.colour03 {
+	color: var(--colourPrim3);
+}
+
+h1 {
+	font-size: 4rem;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 2.5rem;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	margin: 0px;
+}
+
+#gameContainer {
+	justify-content: space-around;
+	flex-grow: 1;
+}
+
+#btnContainer, #resultsContainer, #scoreContainer, #playerScoreContainer, #computerScoreContainer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 60%;
+	border: 3px solid var(--colourText);
+	border-radius: 20px;
+	padding: 50px;
+	margin: auto;
+}
+
+#resultsContainer {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 50%;
+	padding: 20px;
+	flex-direction: column;
+}
+
+#scoreContainer {
+	justify-content: space-evenly;
+	padding: 10px;
+	width: 70%;
+	border: none;
+	/*margin-top: -20px;*/
+}
+
+#playerScoreContainer {
+	flex-direction: column;
+	/*width: 50%;*/
+	border: none;
+	padding: 0px;
+}
+
+#computerScoreContainer {
+	flex-direction: column;
+	/*width: 50%;*/
+	border: none;
+	padding: 0px;
+}
+
+#playerScore {
+	color: var(--colourPrim2);
+	margin: 0px;
+}
+
+#computerScore {
+	color: var(--colourPrim1);
+	margin: 0px;
+}
+
+#feedback {
+	margin-top: 0px;
+}
+
+.btn {
+	width: 175px;
+	height: 175px;
+	background: none;
+	border: none;
+	text-transform: uppercase;
+	color: var(--colourText);
+	font-size: 1.4rem;
+	transition: all 0.15s ease;
+}
+
+.btn:hover {
+	transform: scale(1.1);
+}
+
+.noHover{
+    pointer-events: none;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 3px solid var(--colourText);
+	border-bottom: 3px solid var(--colourText);
+	padding: 20px;
+	/*height: 150px;*/
+	/*width: 100%;*/
+}
+
+a {
+	text-decoration: none;
+	color: var(--colourPrim3);
+	margin-left: 50px;
+}
+
+a:hover {
+	color: var(--colourPrim2);
+}
+
+.btnPlayAgain {
+	visibility: hidden;
+	height: 50px;
+	width: 200px;
+	border: 3px solid var(--colourText);
+	border-radius: 20px;
+	/*padding: 50px;*/
+}
+
+.btnPlayAgain:hover {
+	background-color: var(--colourPrim3);
+}

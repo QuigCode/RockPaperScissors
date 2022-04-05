@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/script.js" defer></script>
 	<title>Rock Paper Scissors</title>
 </head>
+
 <body>
-<script type="text/javascript" src="js/script.js"></script>
+	<div id="gameContainer">
+		<h1><span class="colour01">Rock</span>/<span class="colour02">Paper</span>/<span class="colour03">Scissors</span></h1>
+		<h2>Choose your weapon:</h2>
+		<div id="btnContainer">
+			<button class="btn btnIcon btnRock"><img src="img/Rock.svg">Rock</button>
+			<button class="btn btnIcon btnPaper"><img src="img/Paper.svg">Paper</button>
+			<button class="btn btnIcon btnScissors"><img src="img/Scissors.svg">Scissors</button>
+		</div>
+		<div id='resultsContainer'>
+			<h2 id="feedback">Who will win?</h2>
+			<div id='scoreContainer'>
+				<div id='playerScoreContainer'>
+					<h3>Player Score:</h3>
+					<h2 id='playerScore'>0</h2>
+				</div>
+				<div id='computerScoreContainer'>
+					<h3>CPU Score:</h3>
+					<h2 id='computerScore'>0</h2>
+				</div>
+			</div>
+			<button class='btn btnPlayAgain'>Play Again?</button>
+		</div>
+	</div>
+	<footer>
+		<h3>© QuigCode 2022</h3>
+		<a href="https://www.vecteezy.com/free-vector/rock-paper-scissors" target="_blank">Vectors by Vecteezy</a>
+	</footer>
 </body>
+
 </html>
